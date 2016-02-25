@@ -9,7 +9,7 @@
 #import "DFMediaMessageContent.h"
 #import <UIKit/UIKit.h>
 
-@interface DFImageMessageContent : DFMessageContent
+@interface DFImageMessageContent : DFMediaMessageContent
 
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) UIImage *originImage;

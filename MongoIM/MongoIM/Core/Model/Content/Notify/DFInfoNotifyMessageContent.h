@@ -9,7 +9,7 @@
 #import "DFNotifyMessageContent.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface DFInfoNotifyMessageContent : DFMessageContent
+@interface DFInfoNotifyMessageContent : DFNotifyMessageContent
 
 @property (strong, nonatomic) NSString *content;
 

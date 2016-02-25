@@ -13,6 +13,9 @@
 //消息类型
 #import "MessageContentType.h"
 
+//消息及消息内容
+#import "DFMessage.h"
+#import "DFMessageContent.h"
 
 //消息处理器
 #import "DFBaseMessageHandler.h"
@@ -28,10 +31,10 @@
 //消息显示cell管理
 #import "DFMessageCellManager.h"
 
-//会话列表
+//消息汇总界面
 #import "DFConversationViewController.h"
 
-//消息界面
+//聊天界面
 #import "DFMessageViewController.h"
 
 

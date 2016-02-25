@@ -9,7 +9,7 @@
 #import "DFMediaMessageContent.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface DFVoiceMessageContent : DFMessageContent
+@interface DFVoiceMessageContent : DFMediaMessageContent
 
 @property(nonatomic, strong) NSData *wavAudioData;
 @property(nonatomic, assign) NSUInteger duration;

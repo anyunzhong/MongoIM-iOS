@@ -8,7 +8,7 @@
 
 #import "DFMediaMessageContent.h"
 
-@interface DFRedBagMessageContent : DFMessageContent
+@interface DFRedBagMessageContent : DFMediaMessageContent
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *desc;

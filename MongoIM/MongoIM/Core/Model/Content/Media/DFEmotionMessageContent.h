@@ -9,7 +9,7 @@
 #import "DFMediaMessageContent.h"
 #import "DFPackageEmotionItem.h"
 
-@interface DFEmotionMessageContent : DFMessageContent
+@interface DFEmotionMessageContent : DFMediaMessageContent
 
 @property (strong, nonatomic)  DFPackageEmotionItem *emotionItem;
 

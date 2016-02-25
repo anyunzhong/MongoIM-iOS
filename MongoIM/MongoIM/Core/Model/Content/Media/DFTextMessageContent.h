@@ -9,7 +9,7 @@
 #import "DFMediaMessageContent.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface DFTextMessageContent : DFMessageContent
+@interface DFTextMessageContent : DFMediaMessageContent
 
 @property (strong, nonatomic) NSString *text;
 
