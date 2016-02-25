@@ -2,8 +2,8 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "MongoIM-iOS"
-  s.version      = "1.0.1"
+  s.name         = "MongoIM"
+  s.version      = "1.0.2"
   s.summary      = "即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片"
 
   s.homepage     = "https://github.com/anyunzhong/MongoIM-iOS"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :commit => '764f2da857f08fd3e10a38c83809c0c2c8616283' }
+  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :tag => '1.0.2' }
 
 
   s.source_files = "MongoIM/MongoIM/**/*.{h,m}"
