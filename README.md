@@ -391,7 +391,7 @@ MongoIM *im = [MongoIM sharedInstance];
 
 ####对接融云消息
 
-1. 将融云消息转换为MongoIM消息
+将融云消息转换为MongoIM消息
 ```obj-c
 @interface RongCloudToMongoYourMessageContentAdapter : RongCloudToMongoMessageContentAdapter
 @end
@@ -419,7 +419,7 @@ MongoIM *im = [MongoIM sharedInstance];
 @end
 ```
 
-2. 将MongoIM的消息转换成融云的
+将MongoIM的消息转换成融云的
 ```obj-c
 @interface MongoToRongCloudYourMessageContentAdapter : MongoToRongCloudMessageContentAdapter
 @end
@@ -434,7 +434,7 @@ MongoIM *im = [MongoIM sharedInstance];
 
 ```
 
-3. 注册新增的类型 
+注册新增的类型 
 
 ```obj-c
  RongCloudToMongoMessageContentAdapterManager *rongManager = [RongCloudToMongoMessageContentAdapterManager sharedInstance];
