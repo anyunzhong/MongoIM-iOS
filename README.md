@@ -24,21 +24,21 @@ MongoIM-iOS
 [screenshot9_thumb]: http://file-cdn.datafans.net/github/mongoimios/9.png_250.jpeg
 [screenshot9]: http://file-cdn.datafans.net/github/mongoimios/9.png
 
-Arch
+架构
 ============
-![http://file-cdn.datafans.net/github/mongoimios/intro.png_600.jpeg](http://file-cdn.datafans.net/github/mongoimios/intro.png_600.jpeg)
+![http://file-cdn.datafans.net/github/mongoimios/arch.png_600.jpeg](http://file-cdn.datafans.net/github/mongoimios/arch.png_600.jpeg)
 
 ###### UI层风格可切换 目前已经实现微信风格
 ###### 消息处理层可切换 目前已经对接上融云 支持单聊 群聊 讨论组 聊天室
 
-Installation
+安装
 ============
 
 ```ruby
 pod 'MongoIM'
 ```
 
-Quick Start
+快速开始
 ===============
 
 ```obj-c
@@ -78,7 +78,7 @@ MongoIM *im = [MongoIM sharedInstance];
 ```
 
 
-Custom
+界面及相关逻辑
 ===============
 
 ####设置用户头像 昵称等
@@ -201,3 +201,7 @@ Custom
     [MAMapServices sharedServices].apiKey = @"323c95e56dc16b7da2c9ebcb67b61f03";
     [AMapSearchServices sharedServices].apiKey = @"323c95e56dc16b7da2c9ebcb67b61f03";
 ```
+
+
+扩展
+============
