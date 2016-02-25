@@ -26,9 +26,7 @@ MongoIM-iOS
 
 Arch
 ============
-[![Alt][arch_thumb]]
-
-[arch_thumb]: http://file-cdn.datafans.net/github/mongoimios/intro.png_800.jpeg
+![http://file-cdn.datafans.net/github/mongoimios/intro.png_600.jpeg](http://file-cdn.datafans.net/github/mongoimios/intro.png_600.jpeg)
 
 ###### UI层风格可切换 目前已经实现微信风格
 ###### 消息处理层可切换 目前已经对接上融云
@@ -49,6 +47,24 @@ Usage
 
 #####初始化
 ```obj-c
-  MongoIM *im = [MongoIM sharedInstance];
+MongoIM *im = [MongoIM sharedInstance];
 ```
+
+#####设置消息处理器(消息的接收和存储 连接等)
+
+###### 默认消息消息处理器 目前还在完善中 需要配合MongoIM服务端项目使用 目前还在开发中
+
+```obj-c
+    DFMongoMessageHandler *messageHandler = [[DFMongoMessageHandler alloc] init];
+    im.messageHandler = messageHandler;
+    
+```
+###### 融云消息处理器 具体请参考 [http://rongcloud.cn](http://rongcloud.cn)
+```obj-c
+    DFRongCloudMessageHandler *messageHandler = [[DFRongCloudMessageHandler alloc] initWithAppKey:@"你的融云Appkey" token:@"通过融云获取到的token"];
+    im.messageHandler = messageHandler;
+    
+```
+
+
 
