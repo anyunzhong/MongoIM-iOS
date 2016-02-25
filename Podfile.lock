@@ -1,0 +1,97 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMap2DMap (3.3.0)
+  - AMapSearch (3.2.0)
+  - DACircularProgress (2.3.1)
+  - DFCommon (1.4.1):
+    - AFNetworking (~> 2.6.0)
+    - FMDB (~> 2.5)
+    - MBProgressHUD (~> 0.9.1)
+    - MJPhotoBrowser (~> 1.0.2)
+    - MJRefresh (~> 2.4.11)
+    - MLLabel (~> 1.7)
+    - MMPopupView
+    - ODRefreshControl (~> 1.2)
+    - SDWebImage (~> 3.7.3)
+    - TZImagePickerController
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - MJPhotoBrowser (1.0.2):
+    - SDWebImage
+    - SVProgressHUD
+    - YLGIFImage
+  - MJRefresh (2.4.12)
+  - MLLabel (1.9.0)
+  - MMPopupView (1.6):
+    - Masonry
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - ODRefreshControl (1.2)
+  - RongCloudIMLib (2.4.7)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (1.1.3)
+  - SWTableViewCell (0.3.7)
+  - TZImagePickerController (1.0.9)
+  - YLGIFImage (0.11)
+
+DEPENDENCIES:
+  - AMap2DMap
+  - AMapSearch
+  - DFCommon (~> 1.4.1)
+  - FLAnimatedImage (~> 1.0.10)
+  - MWPhotoBrowser
+  - RongCloudIMLib (~> 2.4.5)
+  - SWTableViewCell (~> 0.3.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AMap2DMap: e53461cdc345375e514579db17dbd721ff9ed9eb
+  AMapSearch: a885f0702578a441a22cb66fa74f8918c6d19e6f
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DFCommon: f384ed3be72d6f067c82413eaeb220413ffedfd8
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJPhotoBrowser: f55e8490231f44a78ca6455105a1c798a142c95f
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  MLLabel: 9d4575d4bcf686462eeaf29c1990988f748f85fd
+  MMPopupView: 49c06ca9600256baf263ee5e67d97334735db262
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  RongCloudIMLib: 0b1874760de14aae22f773e1a94fe975ce144eb9
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TZImagePickerController: 56080f944f0ca5a719b91e4540927e1736cff18f
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+
+COCOAPODS: 0.39.0
