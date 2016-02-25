@@ -76,6 +76,7 @@
 		11519A3C1C7F5E260089013B /* DFLocationChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A371C7F5E260089013B /* DFLocationChooseController.m */; };
 		11519A3D1C7F5E260089013B /* DFLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A391C7F5E260089013B /* DFLocationInfo.m */; };
 		11519A3E1C7F5E260089013B /* DFLocationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A3B1C7F5E260089013B /* DFLocationPlugin.m */; };
+		11519A411C7F620C0089013B /* DFLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A401C7F620C0089013B /* DFLocationViewController.m */; };
 		115BCD7E1C590E9F00A13177 /* DFMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115BCD7D1C590E9F00A13177 /* DFMessageCell.m */; };
 		115BCD841C59258800A13177 /* DFTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115BCD831C59258800A13177 /* DFTextMessageCell.m */; };
 		1173E4661C6BB456004C9979 /* image_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E4651C6BB456004C9979 /* image_bg@2x.png */; };
@@ -84,7 +85,6 @@
 		1173E4821C6DC388004C9979 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1173E4811C6DC388004C9979 /* WebKit.framework */; };
 		1173E48B1C6EDDD4004C9979 /* DFPluginPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E48A1C6EDDD4004C9979 /* DFPluginPresentController.m */; };
 		1173E48E1C6EDF3F004C9979 /* DFFavouriteChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E48D1C6EDF3F004C9979 /* DFFavouriteChooseController.m */; };
-		1173E4941C6EF79E004C9979 /* DFLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E4911C6EF79E004C9979 /* DFLocationViewController.m */; };
 		1173E4951C6EF79E004C9979 /* DFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E4931C6EF79E004C9979 /* DFWebViewController.m */; };
 		1173E49B1C6F0DAF004C9979 /* DFNameCardMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E49A1C6F0DAF004C9979 /* DFNameCardMessageContent.m */; };
 		1173E49E1C6F0E2D004C9979 /* DFNameCardMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E49D1C6F0E2D004C9979 /* DFNameCardMessageCell.m */; };
@@ -397,6 +397,8 @@
 		11519A391C7F5E260089013B /* DFLocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationInfo.m; sourceTree = "<group>"; };
 		11519A3A1C7F5E260089013B /* DFLocationPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLocationPlugin.h; sourceTree = "<group>"; };
 		11519A3B1C7F5E260089013B /* DFLocationPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationPlugin.m; sourceTree = "<group>"; };
+		11519A3F1C7F620C0089013B /* DFLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLocationViewController.h; sourceTree = "<group>"; };
+		11519A401C7F620C0089013B /* DFLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationViewController.m; sourceTree = "<group>"; };
 		115BCD7C1C590E9F00A13177 /* DFMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMessageCell.h; sourceTree = "<group>"; };
 		115BCD7D1C590E9F00A13177 /* DFMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMessageCell.m; sourceTree = "<group>"; };
 		115BCD821C59258800A13177 /* DFTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTextMessageCell.h; sourceTree = "<group>"; };
@@ -410,8 +412,6 @@
 		1173E48A1C6EDDD4004C9979 /* DFPluginPresentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPluginPresentController.m; sourceTree = "<group>"; };
 		1173E48C1C6EDF3F004C9979 /* DFFavouriteChooseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFFavouriteChooseController.h; sourceTree = "<group>"; };
 		1173E48D1C6EDF3F004C9979 /* DFFavouriteChooseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFFavouriteChooseController.m; sourceTree = "<group>"; };
-		1173E4901C6EF79E004C9979 /* DFLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLocationViewController.h; sourceTree = "<group>"; };
-		1173E4911C6EF79E004C9979 /* DFLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationViewController.m; sourceTree = "<group>"; };
 		1173E4921C6EF79E004C9979 /* DFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWebViewController.h; sourceTree = "<group>"; };
 		1173E4931C6EF79E004C9979 /* DFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWebViewController.m; sourceTree = "<group>"; };
 		1173E4991C6F0DAF004C9979 /* DFNameCardMessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFNameCardMessageContent.h; sourceTree = "<group>"; };
@@ -875,6 +875,8 @@
 		11519A351C7F5E260089013B /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				11519A3F1C7F620C0089013B /* DFLocationViewController.h */,
+				11519A401C7F620C0089013B /* DFLocationViewController.m */,
 				11519A361C7F5E260089013B /* DFLocationChooseController.h */,
 				11519A371C7F5E260089013B /* DFLocationChooseController.m */,
 				11519A381C7F5E260089013B /* DFLocationInfo.h */,
@@ -888,8 +890,6 @@
 		1173E48F1C6EF773004C9979 /* MessageDetail */ = {
 			isa = PBXGroup;
 			children = (
-				1173E4901C6EF79E004C9979 /* DFLocationViewController.h */,
-				1173E4911C6EF79E004C9979 /* DFLocationViewController.m */,
 				1173E4921C6EF79E004C9979 /* DFWebViewController.h */,
 				1173E4931C6EF79E004C9979 /* DFWebViewController.m */,
 			);
@@ -1800,7 +1800,6 @@
 				11519A3E1C7F5E260089013B /* DFLocationPlugin.m in Sources */,
 				11519A311C7F59A10089013B /* RongCloudToMongoShortVideoMessageContentAdapter.m in Sources */,
 				11CFC13F1C507D6D00993B3B /* DFInputToolbarView.m in Sources */,
-				1173E4941C6EF79E004C9979 /* DFLocationViewController.m in Sources */,
 				114ABB201C5A61E6004AAE9D /* DFVoiceMessageCell.m in Sources */,
 				1173E49E1C6F0E2D004C9979 /* DFNameCardMessageCell.m in Sources */,
 				11519A1C1C7F59A10089013B /* RCShortVideoMessage.m in Sources */,
@@ -1845,6 +1844,7 @@
 				114ABB631C64992A004AAE9D /* DFMediaMessageContent.m in Sources */,
 				114ABB601C649906004AAE9D /* DFInfoNotifyMessageContent.m in Sources */,
 				114ABBE41C68DD5D004AAE9D /* DFShareMessageCell.m in Sources */,
+				11519A411C7F620C0089013B /* DFLocationViewController.m in Sources */,
 				11519A241C7F59A10089013B /* MongoToRongCloudShareMessageContentAdapter.m in Sources */,
 				114ABB781C65A30D004AAE9D /* DFLocationMessageCell.m in Sources */,
 				114ABBEB1C68E6CE004AAE9D /* DFFavouritePlugin.m in Sources */,

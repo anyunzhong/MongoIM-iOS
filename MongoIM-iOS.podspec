@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :commit => 'ddb05865b88f90d0ff4720b1c9bd8c5eaa353ae8' }
+  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :commit => '5ad61ee00adcd2adb49e243864d0571fbcd742dc' }
 
 
   s.source_files = "MongoIM/MongoIM/**/*.{h,m}"
