@@ -16,7 +16,7 @@
 
 #import "Key.h"
 
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 #define EmotionTabItemWidth 50
 #define EmotionTabItemHeight 37
