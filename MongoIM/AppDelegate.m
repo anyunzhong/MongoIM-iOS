@@ -11,9 +11,8 @@
 
 #import "MongoIM.h"
 
-//测试用
-#import "DFRedBagCreateController.h"
-#import "DFLocationChooseController.h"
+#import "DFRongCloudMessageHandler.h"
+
 
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
@@ -25,6 +24,13 @@
 #import "DFRedBagPlugin.h"
 #import "DFNameCardPlugin.h"
 #import "DFNameCardChooseController.h"
+
+#import "DFLocationPlugin.h"
+
+#import "DFRedBagMessageContent.h"
+#import "DFLocationMessageContent.h"
+
+#import "DFLocationViewController.h"
 
 //点击消息后的行为处理
 
@@ -107,6 +113,10 @@
     //NSArray *plugins = @[plugin];
     //[[MongoIM sharedInstance] resetPlugins:plugins];
     
+    //发送位置插件
+    DFLocationPlugin *locationPlugin = [[DFLocationPlugin alloc] init];
+    [im addPlugin:locationPlugin];
+    
     //设置点击消息后的处理方式
     //默认实现的有 图片 分享 位置三种消息 如果要设置系统自带消息的点击行为 则通过注册消息点击handler的方式执行
     //如果是自己定义的消息显示cell 则直接覆盖基类onClick方法即可实现同样效果
@@ -115,16 +125,7 @@
     
     
     //UI入口 DFConversationViewController
-    //这里方便单独调试 加了一些不相关的controller 请直接忽略
-    
     DFConversationViewController *conversationController = [[DFConversationViewController alloc] init];
-    
-    //ViewController *controller = [ViewController new];
-    
-    //DFRedBagCreateController *redController = [[DFRedBagCreateController alloc] init];
-    
-    //DFLocationChooseController *locationChooseController = [[DFLocationChooseController alloc] init];
-
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:conversationController];
     UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, -20, navController.navigationBar.frame.size.width, 64)];
@@ -216,8 +217,18 @@
 
 -(void)onClick:(DFMessage *)message controller:(UINavigationController *)controller
 {
-    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"点击了消息" message:@"抢到红包了吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    [alert show];
+    DFMessageContent *content = message.messageContent;
+    
+    if ([content isKindOfClass:[DFRedBagMessageContent class]]) {
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"点击了消息" message:@"抢到红包了吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alert show];
+    }else if ([content isKindOfClass:[DFLocationMessageContent class]]) {
+        
+        DFLocationMessageContent *locationMessage = (DFLocationMessageContent *)message.messageContent;
+        DFLocationViewController *locationController = [[DFLocationViewController alloc] initWithLocation:locationMessage];
+        [controller pushViewController:locationController animated:YES];
+    }
+    
 }
 
 

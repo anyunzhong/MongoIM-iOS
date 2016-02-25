@@ -15,7 +15,6 @@
 #import "DFPhotoCameraPlugin.h"
 #import "DFShortVideoPlugin.h"
 #import "DFRedBagPlugin.h"
-#import "DFLocationPlugin.h"
 #import "DFFavouritePlugin.h"
 #import "DFNameCardPlugin.h"
 

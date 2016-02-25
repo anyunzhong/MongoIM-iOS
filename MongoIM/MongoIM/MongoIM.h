@@ -17,10 +17,10 @@
 #import "DFMessage.h"
 #import "DFMessageContent.h"
 
+
 //消息处理器
 #import "DFBaseMessageHandler.h"
 #import "DFMongoMessageHandler.h"
-#import "DFRongCloudMessageHandler.h"
 
 //插件管理
 #import "DFPluginsManager.h"

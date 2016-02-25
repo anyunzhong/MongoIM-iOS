@@ -10,7 +10,7 @@
 #import "DFVideoCaptureController.h"
 #import "AFNetworking.h"
 #import "DFShortVideoMessageContent.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "DFMessageViewController.h"
 
 @interface DFShortVideoPlugin()<DFVideoCaptureControllerDelegate>

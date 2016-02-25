@@ -76,9 +76,6 @@ static MongoIM *_im=nil;
     DFRedBagPlugin *redBagPlugin = [[DFRedBagPlugin alloc] init];
     [manager addPlugin:redBagPlugin];
     
-    DFLocationPlugin *locationPlugin = [[DFLocationPlugin alloc] init];
-    [manager addPlugin:locationPlugin];
-    
     DFFavouritePlugin *favPlugin = [[DFFavouritePlugin alloc] init];
     [manager addPlugin:favPlugin];
     

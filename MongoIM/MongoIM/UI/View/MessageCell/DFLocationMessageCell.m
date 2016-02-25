@@ -14,8 +14,6 @@
 
 #import "DFShapedImageView.h"
 
-#import "DFLocationViewController.h"
-
 #define IMAGE_WIDTH MaxBubbleWidth
 #define IMAGE_HEIGHT IMAGE_WIDTH*0.6
 
@@ -108,9 +106,7 @@
 
 -(void)onClick:(DFMessage *)message controller:(UINavigationController *)controller
 {
-    DFLocationMessageContent *locationMessage = (DFLocationMessageContent *)message.messageContent;
-    DFLocationViewController *locationController = [[DFLocationViewController alloc] initWithLocation:locationMessage];
-    [controller pushViewController:locationController animated:YES];
+    
     
 }
 
