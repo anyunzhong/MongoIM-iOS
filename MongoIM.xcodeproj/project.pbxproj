@@ -44,7 +44,6 @@
 		114ABBEB1C68E6CE004AAE9D /* DFFavouritePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 114ABBEA1C68E6CE004AAE9D /* DFFavouritePlugin.m */; };
 		114ABBF01C68FA20004AAE9D /* fileicon_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114ABBEF1C68FA20004AAE9D /* fileicon_link@2x.png */; };
 		114ABBF31C698673004AAE9D /* DFMongoMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 114ABBF21C698673004AAE9D /* DFMongoMessageHandler.m */; };
-		11519A171C7F59A10089013B /* DFRongCloudMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 115199D91C7F59A10089013B /* DFRongCloudMessageHandler.m */; };
 		11519A181C7F59A10089013B /* RCEmotionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 115199DE1C7F59A10089013B /* RCEmotionMessage.m */; };
 		11519A191C7F59A10089013B /* RCNameCardMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 115199E01C7F59A10089013B /* RCNameCardMessage.m */; };
 		11519A1A1C7F59A10089013B /* RCRedBagMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 115199E21C7F59A10089013B /* RCRedBagMessage.m */; };
@@ -77,6 +76,7 @@
 		11519A3D1C7F5E260089013B /* DFLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A391C7F5E260089013B /* DFLocationInfo.m */; };
 		11519A3E1C7F5E260089013B /* DFLocationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A3B1C7F5E260089013B /* DFLocationPlugin.m */; };
 		11519A411C7F620C0089013B /* DFLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A401C7F620C0089013B /* DFLocationViewController.m */; };
+		11519A4C1C7F69740089013B /* DFRongCloudMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 11519A4B1C7F69740089013B /* DFRongCloudMessageHandler.m */; };
 		115BCD7E1C590E9F00A13177 /* DFMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115BCD7D1C590E9F00A13177 /* DFMessageCell.m */; };
 		115BCD841C59258800A13177 /* DFTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115BCD831C59258800A13177 /* DFTextMessageCell.m */; };
 		1173E4661C6BB456004C9979 /* image_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E4651C6BB456004C9979 /* image_bg@2x.png */; };
@@ -331,8 +331,6 @@
 		114ABBEF1C68FA20004AAE9D /* fileicon_link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fileicon_link@2x.png"; sourceTree = "<group>"; };
 		114ABBF11C698673004AAE9D /* DFMongoMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMongoMessageHandler.h; sourceTree = "<group>"; };
 		114ABBF21C698673004AAE9D /* DFMongoMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMongoMessageHandler.m; sourceTree = "<group>"; };
-		115199D81C7F59A10089013B /* DFRongCloudMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFRongCloudMessageHandler.h; sourceTree = "<group>"; };
-		115199D91C7F59A10089013B /* DFRongCloudMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFRongCloudMessageHandler.m; sourceTree = "<group>"; };
 		115199DD1C7F59A10089013B /* RCEmotionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCEmotionMessage.h; sourceTree = "<group>"; };
 		115199DE1C7F59A10089013B /* RCEmotionMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCEmotionMessage.m; sourceTree = "<group>"; };
 		115199DF1C7F59A10089013B /* RCNameCardMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNameCardMessage.h; sourceTree = "<group>"; };
@@ -397,6 +395,8 @@
 		11519A3B1C7F5E260089013B /* DFLocationPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationPlugin.m; sourceTree = "<group>"; };
 		11519A3F1C7F620C0089013B /* DFLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLocationViewController.h; sourceTree = "<group>"; };
 		11519A401C7F620C0089013B /* DFLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLocationViewController.m; sourceTree = "<group>"; };
+		11519A4A1C7F69740089013B /* DFRongCloudMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFRongCloudMessageHandler.h; sourceTree = "<group>"; };
+		11519A4B1C7F69740089013B /* DFRongCloudMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFRongCloudMessageHandler.m; sourceTree = "<group>"; };
 		115BCD7C1C590E9F00A13177 /* DFMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMessageCell.h; sourceTree = "<group>"; };
 		115BCD7D1C590E9F00A13177 /* DFMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMessageCell.m; sourceTree = "<group>"; };
 		115BCD821C59258800A13177 /* DFTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTextMessageCell.h; sourceTree = "<group>"; };
@@ -748,19 +748,9 @@
 			isa = PBXGroup;
 			children = (
 				11519A341C7F5E260089013B /* Plugin */,
-				115199D71C7F59A10089013B /* MessageHandler */,
 				115199DA1C7F59A10089013B /* Vendor */,
 			);
 			path = Extend;
-			sourceTree = "<group>";
-		};
-		115199D71C7F59A10089013B /* MessageHandler */ = {
-			isa = PBXGroup;
-			children = (
-				115199D81C7F59A10089013B /* DFRongCloudMessageHandler.h */,
-				115199D91C7F59A10089013B /* DFRongCloudMessageHandler.m */,
-			);
-			path = MessageHandler;
 			sourceTree = "<group>";
 		};
 		115199DA1C7F59A10089013B /* Vendor */ = {
@@ -774,6 +764,7 @@
 		115199DB1C7F59A10089013B /* RongCloud */ = {
 			isa = PBXGroup;
 			children = (
+				11519A491C7F69740089013B /* MessageHandler */,
 				115199DC1C7F59A10089013B /* Model */,
 				115199E71C7F59A10089013B /* MongoToRongCloudAdapter */,
 				115199FE1C7F59A10089013B /* RongCloudToMongoAdapter */,
@@ -879,6 +870,15 @@
 				11519A3B1C7F5E260089013B /* DFLocationPlugin.m */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		11519A491C7F69740089013B /* MessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				11519A4A1C7F69740089013B /* DFRongCloudMessageHandler.h */,
+				11519A4B1C7F69740089013B /* DFRongCloudMessageHandler.m */,
+			);
+			path = MessageHandler;
 			sourceTree = "<group>";
 		};
 		1173E48F1C6EF773004C9979 /* MessageDetail */ = {
@@ -1813,7 +1813,6 @@
 				11519A261C7F59A10089013B /* MongoToRongCloudTextMessageContentAdapter.m in Sources */,
 				11519A231C7F59A10089013B /* MongoToRongCloudRedBagMessageContentAdapter.m in Sources */,
 				11CFBF161C4FCB9F00993B3B /* LCVoice.m in Sources */,
-				11519A171C7F59A10089013B /* DFRongCloudMessageHandler.m in Sources */,
 				1173E4A81C6F121F004C9979 /* DFNameCardChooseController.m in Sources */,
 				11519A321C7F59A10089013B /* RongCloudToMongoTextMessageContentAdapter.m in Sources */,
 				11CFC1731C5090C000993B3B /* MongoIM.m in Sources */,
@@ -1825,6 +1824,7 @@
 				11CFC0AD1C4FD67300993B3B /* DFPackageEmotion.m in Sources */,
 				114ABB631C64992A004AAE9D /* DFMediaMessageContent.m in Sources */,
 				114ABB601C649906004AAE9D /* DFInfoNotifyMessageContent.m in Sources */,
+				11519A4C1C7F69740089013B /* DFRongCloudMessageHandler.m in Sources */,
 				114ABBE41C68DD5D004AAE9D /* DFShareMessageCell.m in Sources */,
 				11519A411C7F620C0089013B /* DFLocationViewController.m in Sources */,
 				11519A241C7F59A10089013B /* MongoToRongCloudShareMessageContentAdapter.m in Sources */,
