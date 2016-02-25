@@ -307,10 +307,45 @@ MongoIM *im = [MongoIM sharedInstance];
    [manager registerCell:@"你的消息内容类型" cellClass:[DFYouressageCell class]];
 ```
 
-
-#####4. 如果使用融云作为消息处理器 还需要做消息的对接
-
-
 ####自定义插件
+```obj-c
+@interface YourPlugin : DFBasePlugin
 
-####自定义表情显示
+@end
+
+
+
+@implementation YourPlugin
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.icon = @"sharemore_location";
+        self.name = @"位置";
+    }
+    return self;
+}
+
+-(void)onClickDefault
+{
+    //处理点击后的行为
+}
+
+@end
+
+```
+
+注册插件
+```obj-c
+    DFPluginsManager *manager = [DFPluginsManager sharedInstance];
+    YourPlugin *plugin = [[YourPlugin alloc] init];
+    [manager addPlugin:plugin];
+```
+
+
+融云消息扩展
+============
+
+
+
