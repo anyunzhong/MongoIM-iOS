@@ -18,11 +18,11 @@
 #import "MongoIM.h"
 #import "MessageContentType.h"
 
-#import "MWPhotoBrowser.h"
+//#import "MWPhotoBrowser.h"
 
 #define IMAGE_BUBBLE_WIDTH  MaxBubbleWidth*0.7
 
-@interface DFImageMessageCell()<MWPhotoBrowserDelegate>
+@interface DFImageMessageCell()
 
 @property (strong,nonatomic) DFShapedImageView *imgView;
 
@@ -124,72 +124,72 @@
     return imageMessage.height + [super getCellHeight:message];
 }
 
--(void)onClick:(DFMessage *)message controller:(UINavigationController *)controller
-{
-    
-    DFBaseMessageHandler *messageHandler = [MongoIM sharedInstance].messageHandler;
-    
-    _messages = [messageHandler getImageMessages:message.conversationType targetId:message.targetId size:100];
-    
-    if (_photos == nil) {
-        _photos = [NSMutableArray array];
-    }
-    
-    [_photos removeAllObjects];
-    
-    
-    NSUInteger currentIndex = 0;
-    for (int i=0; i<_messages.count; i++) {
-        
-        DFMessage *msg = (DFMessage *)[_messages objectAtIndex:i];
-        if (message.messageId == msg.messageId) {
-            currentIndex = i;
-        }
-        
-        DFImageMessageContent *imageMessage = (DFImageMessageContent *)msg.messageContent;
-        
-        
-        MWPhoto *photo;
-        if (![imageMessage.url hasPrefix:@"http://"]) {
-            photo = [[MWPhoto alloc] initWithImage:imageMessage.originImage];
-        }else{
-            photo = [[MWPhoto alloc] initWithURL:[NSURL URLWithString:imageMessage.url]];
-        }
-        
-        [_photos addObject:photo];
-    }
-    
-    MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
-    browser.displayActionButton = NO;
-    browser.displayNavArrows = NO;
-    browser.displaySelectionButtons = NO;
-    browser.zoomPhotosToFill = YES;
-    browser.alwaysShowControls = NO;
-    browser.enableGrid = YES;
-    browser.startOnGrid = NO;
-    browser.autoPlayOnAppear = NO;
-    [browser setCurrentPhotoIndex:currentIndex];
-    
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:browser];
-    [controller presentViewController:nav animated:YES completion:nil];
-    
-}
-
--(NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser
-{
-    return _photos.count;
-}
-
-- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index;
-{
-    return [_photos objectAtIndex:index];
-}
-
-- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser thumbPhotoAtIndex:(NSUInteger)index
-{
-    DFImageMessageContent *imageMessage = (DFImageMessageContent *)(((DFMessage *)[_messages objectAtIndex:index]).messageContent);
-    return [[MWPhoto alloc] initWithImage:imageMessage.thumbImage];
-}
-
+//-(void)onClick:(DFMessage *)message controller:(UINavigationController *)controller
+//{
+//    
+//    DFBaseMessageHandler *messageHandler = [MongoIM sharedInstance].messageHandler;
+//    
+//    _messages = [messageHandler getImageMessages:message.conversationType targetId:message.targetId size:100];
+//    
+//    if (_photos == nil) {
+//        _photos = [NSMutableArray array];
+//    }
+//    
+//    [_photos removeAllObjects];
+//    
+//    
+//    NSUInteger currentIndex = 0;
+//    for (int i=0; i<_messages.count; i++) {
+//        
+//        DFMessage *msg = (DFMessage *)[_messages objectAtIndex:i];
+//        if (message.messageId == msg.messageId) {
+//            currentIndex = i;
+//        }
+//        
+//        DFImageMessageContent *imageMessage = (DFImageMessageContent *)msg.messageContent;
+//        
+//        
+//        MWPhoto *photo;
+//        if (![imageMessage.url hasPrefix:@"http://"]) {
+//            photo = [[MWPhoto alloc] initWithImage:imageMessage.originImage];
+//        }else{
+//            photo = [[MWPhoto alloc] initWithURL:[NSURL URLWithString:imageMessage.url]];
+//        }
+//        
+//        [_photos addObject:photo];
+//    }
+//    
+//    MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
+//    browser.displayActionButton = NO;
+//    browser.displayNavArrows = NO;
+//    browser.displaySelectionButtons = NO;
+//    browser.zoomPhotosToFill = YES;
+//    browser.alwaysShowControls = NO;
+//    browser.enableGrid = YES;
+//    browser.startOnGrid = NO;
+//    browser.autoPlayOnAppear = NO;
+//    [browser setCurrentPhotoIndex:currentIndex];
+//    
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:browser];
+//    [controller presentViewController:nav animated:YES completion:nil];
+//    
+//}
+//
+//-(NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser
+//{
+//    return _photos.count;
+//}
+//
+//- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index;
+//{
+//    return [_photos objectAtIndex:index];
+//}
+//
+//- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser thumbPhotoAtIndex:(NSUInteger)index
+//{
+//    DFImageMessageContent *imageMessage = (DFImageMessageContent *)(((DFMessage *)[_messages objectAtIndex:index]).messageContent);
+//    return [[MWPhoto alloc] initWithImage:imageMessage.thumbImage];
+//}
+//
 
 @end

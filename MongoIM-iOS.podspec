@@ -2,25 +2,25 @@
 Pod::Spec.new do |s|
 
 
-  s.name         = "MongoIM"
+  s.name         = "MongoIM-iOS"
   s.version      = "1.0.0"
-  s.summary      = "IM 即时通讯 聊天 单聊 讨论组 微信风格"
+  s.summary      = "即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片"
 
-  s.homepage     = "https://github.com/anyunzhong/MongoIM"
+  s.homepage     = "https://github.com/anyunzhong/MongoIM-iOS"
 
   s.license      = "Apache 2.0"
 
-  s.author       = { "AllenZhong" => "2642754767@qq.com" }
+  s.author       = { "Fast-Dev-Kit" => "2642754767@qq.com" }
 
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/MongoIM.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :tag => "1.0.0" }
 
 
-  s.source_files = "MongoIM/MongoIM/**/*.{h,m}"
+  s.source_files = "MongoIM/MongoIM/Classes/**/*.{h,m}"
 
-  s.resources = "MongoIM/MongoIM/Resource/*.png"
+  s.resources = "MongoIM/MongoIM/Resource/**/*.png"
 
 
   s.requires_arc = true
