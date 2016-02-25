@@ -203,5 +203,71 @@ MongoIM *im = [MongoIM sharedInstance];
 ```
 
 
-扩展
+自定义扩展
 ============
+
+####自定义新的消息及显示
+
+**新的消息类型**
+如果是媒体类消息(比如图片 文字 视频等) 直接继承 DFMediaMessageContent 如果是通知类消息(比如系统提示) 直接继承 DFNotifyMessageContent
+当然你也可以直接继承DFMessageContent
+
+```obj-c
+    @interface YourMessageContent : DFMediaMessageContent
+        @property (nonatomic, strong) NSString *your_field;
+    @end
+```
+
+**消息显示**
+如果需要显示头像 直接继承DFMessageCell 如果不需要 直接继承DFBaseMessageCell
+例如：定义一个需要显示头像类型的cell
+```obj-c
+   
+@implementation DFYourMessageCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        //初始化相关view
+        [self.messageContentView addSubview:your_view];
+    }
+    return self;
+}
+
+
+-(void)updateWithMessage:(DFMessage *)message
+{
+    [super updateWithMessage:message];
+    
+    //将数据绑定到view上
+    
+}
+
+-(CGSize)getMessageContentViewSize
+{
+    //返回中间内容需要的尺寸
+    return CGSizeMake(宽度,高度);
+}
+
+-(CGFloat)getCellHeight:(DFMessage *)message
+{
+    return 内容的高度 + [super getCellHeight:message];
+}
+
+-(void)onClick:(DFMessage *)message controller:(UINavigationController *)controller
+{
+    //点击消息后处理
+}
+
+
+-(void)onMenuShow:(BOOL)show
+{
+    //长按显示菜单后处理 比如将bubble颜色变深
+}
+@end
+```
+
+####自定义插件
+
+####自定义表情显示
