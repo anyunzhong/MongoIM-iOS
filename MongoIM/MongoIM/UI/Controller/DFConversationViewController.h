@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DFBaseTableViewController.h"
+#import "DFMessageViewController.h"
 
 @interface DFConversationViewController : DFBaseTableViewController
 

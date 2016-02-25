@@ -8,15 +8,8 @@
 
 #import "MongoIM.h"
 
-#import "DFPluginsManager.h"
-#import "DFEmotionsManager.h"
-#import "MessageContentType.h"
-
 #import "DFSandboxHelper.h"
-
 #import "NSDictionary+JSON.h"
-
-#import "DFMongoMessageHandler.h"
 
 @implementation MongoIM
 
@@ -41,7 +34,7 @@ static MongoIM *_im=nil;
 {
     self = [super init];
     if (self) {
-        
+        [self imInit];
     }
     return self;
 }

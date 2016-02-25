@@ -10,7 +10,6 @@
 #import "DFBarStatusView.h"
 #import "DFConversationCell.h"
 #import "MongoIM.h"
-#import "DFMessageViewController.h"
 #import "Key.h"
 #import "MMPopupItem.h"
 #import "MMAlertView.h"

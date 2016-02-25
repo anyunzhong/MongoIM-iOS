@@ -9,11 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-#import "DFConversationViewController.h"
-
 #import "MongoIM.h"
-
-#import "DFRongCloudMessageHandler.h"
 
 //测试用
 #import "DFRedBagCreateController.h"
@@ -56,7 +52,6 @@
     
     //初始化
     MongoIM *im = [MongoIM sharedInstance];
-    [im imInit];
     
     
     //设置消息处理器(消息的存储与收发)

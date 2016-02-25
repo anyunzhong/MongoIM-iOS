@@ -7,11 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "DFUserInfo.h"
+
+//消息类型
+#import "MessageContentType.h"
+
+
+//消息处理器
 #import "DFBaseMessageHandler.h"
-#import "DFPackageEmotion.h"
-#import "DFBasePlugin.h"
+#import "DFMongoMessageHandler.h"
+#import "DFRongCloudMessageHandler.h"
+
+//插件管理
+#import "DFPluginsManager.h"
+
+//表情管理
+#import "DFEmotionsManager.h"
+
+//消息显示cell管理
 #import "DFMessageCellManager.h"
+
+//会话列表
+#import "DFConversationViewController.h"
+
+//消息界面
+#import "DFMessageViewController.h"
+
+
 
 typedef void (^UserInfoCallback)(DFUserInfo *);
 
@@ -26,8 +49,6 @@ typedef void (^UserInfoProvider)(NSString *, UserInfoCallback callback);
 
 
 +(instancetype) sharedInstance;
-
--(void) imInit;
 
 //添加表情包
 -(void) addEmotionPackage:(DFPackageEmotion *) emotionPackage;

@@ -11,7 +11,6 @@
 
 #import "DFBasePlugin.h"
 
-//default plugins
 #import "DFPhotoAlbumPlugin.h"
 #import "DFPhotoCameraPlugin.h"
 #import "DFShortVideoPlugin.h"
