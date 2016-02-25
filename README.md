@@ -21,12 +21,34 @@ MongoIM-iOS
 [screenshot7]: http://file-cdn.datafans.net/github/mongoimios/7.png
 [screenshot8_thumb]: http://file-cdn.datafans.net/github/mongoimios/8.png_250.jpeg
 [screenshot8]: http://file-cdn.datafans.net/github/mongoimios/8.png
-[screenshot9_thumb]: http://file-cdn.datafans.net/github/mongoimios/10.png_250.jpeg
-[screenshot9]: http://file-cdn.datafans.net/github/mongoimios/10.png
+[screenshot9_thumb]: http://file-cdn.datafans.net/github/mongoimios/9.png_250.jpeg
+[screenshot9]: http://file-cdn.datafans.net/github/mongoimios/9.png
 
 Arch
 ============
-[![Alt][arch_thumb]][arch]
+[![Alt][arch_thumb]]
 
-[arch_thumb]: http://file-cdn.datafans.net/github/mongoimios/intro.png
-[arch]: http://file-cdn.datafans.net/github/mongoimios/intro.png
+[arch_thumb]: http://file-cdn.datafans.net/github/mongoimios/intro.png_800.jpeg
+
+###### UI层风格可切换 目前已经实现微信风格
+###### 消息处理层可切换 目前已经对接上融云
+
+Installation
+============
+
+```ruby
+pod 'MongoIM'
+```
+
+Usage
+===============
+
+```obj-c
+#import "MongoIM.h"
+```
+
+#####初始化
+```obj-c
+  MongoIM *im = [MongoIM sharedInstance];
+```
+
