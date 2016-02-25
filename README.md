@@ -347,5 +347,103 @@ MongoIM *im = [MongoIM sharedInstance];
 融云消息扩展
 ============
 
+####新增融云消息 具体可参照默认的红包 短视频等消息的实现 具体细节可以参考融云官方文档
+
+```obj-c
+@interface YourRongCloudMessage : RCMessageContent
+@property (strong, nonatomic) NSString *title;
+@end
+
+@implementation YourRongCloudMessage
+
+-(NSData *)encode
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setObject:_title forKey:@"title"];
+    return [NSDictionary dic2jsonData:dic];
+}
+
+-(void)decodeWithData:(NSData *)data
+{
+    NSDictionary *dic = [NSDictionary jsonData2Dic:data];
+    _title = [dic objectForKey:@"title"];
+}
+
++(NSString *)getObjectName
+{
+    return @"你定义的融云消息类型";
+}
+
+
++(RCMessagePersistent)persistentFlag
+{
+    return MessagePersistent_ISPERSISTED | MessagePersistent_ISCOUNTED;
+}
+
+
+```
+
+
+####注册融云消息
+```obj-c
+[[RCIMClient sharedRCIMClient] registerMessageType:[YourRongCloudMessage class]];
+```
+
+####对接融云消息
+
+1. 将融云消息转换为MongoIM消息
+```obj-c
+@interface RongCloudToMongoYourMessageContentAdapter : RongCloudToMongoMessageContentAdapter
+@end
+
+@implementation RongCloudToMongoYourMessageContentAdapter
+
+-(DFMessageContent *)getMongoMessageContent:(RCYourMessage *)yourgMessage
+{
+    YourMessageContent *messageContent = [[YourMessageContent alloc] init];
+    messageContent.title = redBagMessage.title; //这里对应你设置的字段
+    ........
+    return messageContent;
+}
+
+-(NSString *)getMongoMessageType
+{
+    return @"你的自定义消息类型";  //不要与融云那边消息类型混淆了
+}
+
+-(NSString *)getConversationSubTitle:(RCRedBagMessage *)redBagMessage
+{
+    return @"会话列表需要显示的文字";
+}
+
+@end
+```
+
+2. 将MongoIM的消息转换成融云的
+```obj-c
+@interface MongoToRongCloudYourMessageContentAdapter : MongoToRongCloudMessageContentAdapter
+@end
+
+@implementation MongoToRongCloudYourMessageContentAdapter
+
+-(RCMessageContent *)getRongCloudMessageContent:(YourMessageContent *)yourMessage
+{
+    return [.......]; //你的转换逻辑
+}
+@end
+
+```
+
+3. 注册新增的类型 
+
+```obj-c
+ RongCloudToMongoMessageContentAdapterManager *rongManager = [RongCloudToMongoMessageContentAdapterManager sharedInstance];
+ [rongManager registerAdapter:[YourRongCloudMessage class] adapterClazz:[RongCloudToMongoYourMessageContentAdapter class]];
+ 
+ MongoToRongCloudMessageContentAdapterManager *mongoManager = [MongoToRongCloudMessageContentAdapterManager sharedInstance];
+ [mongoManager registerAdapter:[YourMessageContent class] adapterClazz:[MongoToRongCloudYourMessageContentAdapter class]];
+
+```
+
 
 
