@@ -1,5 +1,8 @@
 MongoIM-iOS
 =============
+[![Version](https://img.shields.io/cocoapods/v/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
+[![License](https://img.shields.io/cocoapods/l/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
+[![Platform](https://img.shields.io/cocoapods/p/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 
 即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片...
 
@@ -68,10 +71,18 @@ MongoIM *im = [MongoIM sharedInstance];
     
 ```
 ####### 融云消息处理器 具体请参考 [http://rongcloud.cn](http://rongcloud.cn)
+#########引入融云框架
+```obj-c
+pod 'RongCloudIMLib', '~> 2.4.5'
+```
+
+#########然后将MongoIM/Extend/Vendor/RongCloud文件夹拖到工程
+（因为融云的pod不是开源代码 打包成了framework形式 所以没有集成到Mongo.pod中 这样有另外一个好处 按需定制 你不需要集成融云 就不用拖入扩展类）
+
+#########设置消息处理器为融云
 ```obj-c
     DFRongCloudMessageHandler *messageHandler = [[DFRongCloudMessageHandler alloc] initWithAppKey:@"你的融云Appkey" token:@"通过融云获取到的token"];
     im.messageHandler = messageHandler;
-    
 ```
 
 
