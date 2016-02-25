@@ -208,9 +208,11 @@ MongoIM *im = [MongoIM sharedInstance];
 
 ####自定义新的消息及显示
 
-**新的消息类型**
+##### 1.新的消息类型
 如果是媒体类消息(比如图片 文字 视频等) 直接继承 DFMediaMessageContent 如果是通知类消息(比如系统提示) 直接继承 DFNotifyMessageContent
 当然你也可以直接继承DFMessageContent
+
+**注意消息的内容类型 需要与后面cell注册时的类型一样 也就是说是根据实体的类型找对应的cell来显示 另外 这个类型不要与系统已经有的一样 否则会冲突**
 
 ```obj-c
     @interface YourMessageContent : DFMediaMessageContent
@@ -218,7 +220,7 @@ MongoIM *im = [MongoIM sharedInstance];
     @end
 ```
 
-**消息显示**
+#####2. 消息显示
 如果需要显示头像 直接继承DFMessageCell 如果不需要 直接继承DFBaseMessageCell
 例如：定义一个需要显示头像类型的cell
 ```obj-c
@@ -267,6 +269,47 @@ MongoIM *im = [MongoIM sharedInstance];
 }
 @end
 ```
+
+
+不需要显示头像
+```obj-c
+
+@implementation DFYourMessageCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        //初始化view
+        [self.baseContentView addSubview:your_view];
+    }
+    return self;
+}
+
+-(void)updateWithMessage:(DFMessage *)message
+{
+    [super updateWithMessage:message];
+    
+   //更新数据
+    
+}
+
+-(CGFloat)getCellHeight:(DFMessage *)message
+{
+    return 内容的高度 + [super getCellHeight:message];
+}
+@end
+```
+
+#####3. 注册消息显示cell
+
+```obj-c
+   DFMessageCellManager *manager = [DFMessageCellManager sharedInstance];
+   [manager registerCell:@"你的消息内容类型" cellClass:[DFYouressageCell class]];
+```
+
+
+#####4. 如果使用融云作为消息处理器 还需要做消息的对接
+
 
 ####自定义插件
 
