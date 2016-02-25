@@ -4,6 +4,8 @@ MongoIM-iOS
 [![License](https://img.shields.io/cocoapods/l/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 [![Platform](https://img.shields.io/cocoapods/p/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 
+<br />
+
 即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片...
 
 [![Alt][screenshot1_thumb]][screenshot1]    [![Alt][screenshot2_thumb]][screenshot2]    [![Alt][screenshot3_thumb]][screenshot3]    [![Alt][screenshot4_thumb]][screenshot4]    [![Alt][screenshot5_thumb]][screenshot5]    [![Alt][screenshot6_thumb]][screenshot6]    [![Alt][screenshot7_thumb]][screenshot7]    [![Alt][screenshot8_thumb]][screenshot8]    [![Alt][screenshot9_thumb]][screenshot9]
@@ -27,21 +29,23 @@ MongoIM-iOS
 [screenshot9_thumb]: http://file-cdn.datafans.net/github/mongoimios/9.png_250.jpeg
 [screenshot9]: http://file-cdn.datafans.net/github/mongoimios/9.png
 
+<br />
 架构
 ============
 ![http://file-cdn.datafans.net/github/mongoimios/arch.png_600.jpeg](http://file-cdn.datafans.net/github/mongoimios/arch.png_600.jpeg)
 
-
+<br />
 #### UI层风格可切换
 ######目前已经实现微信风格 你也可以自定义风格 完全自定义风格的相关逻辑还需要开发
 
+<br />
 #### 消息处理层可切换
 ######目前已经对接上融云 支持单聊 群聊 讨论组 聊天室
 ######其它公有IM云服务还在计划中.....
 ######IM后段逻辑相对复杂 MongoIM消息处理和服务端还在开发中.... 远期目标是开发一套稳定的可部署在私有云的IM服务
 
 
-
+<br />
 安装
 ============
 
@@ -49,6 +53,7 @@ MongoIM-iOS
 pod 'MongoIM'
 ```
 
+<br />
 快速开始
 ===============
 
@@ -56,47 +61,49 @@ pod 'MongoIM'
 #import "MongoIM.h"
 ```
 
-#####初始化
+####初始化
 ```obj-c
 MongoIM *im = [MongoIM sharedInstance];
 ```
-
+<br />
 ####设置消息处理器(消息的接收和存储 连接等)
 
-####### 默认消息消息处理器 目前还在完善中 需要配合MongoIM服务端项目使用 目前还在开发中
+#####1.默认消息消息处理器 目前还在完善中 需要配合MongoIM服务端项目使用 目前还在开发中
 
 ```obj-c
     DFMongoMessageHandler *messageHandler = [[DFMongoMessageHandler alloc] init];
     im.messageHandler = messageHandler;
     
 ```
-####### 融云消息处理器 具体请参考 [http://rongcloud.cn](http://rongcloud.cn)
-#########引入融云框架
+
+#####2.融云消息处理器 具体请参考 [http://rongcloud.cn](http://rongcloud.cn)
+引入融云框架
 ```obj-c
 pod 'RongCloudIMLib', '~> 2.4.5'
 ```
 
-#########然后将MongoIM/Extend/Vendor/RongCloud文件夹拖到工程
+然后将MongoIM/Extend/Vendor/RongCloud文件夹拖到工程
 （因为融云的pod不是开源代码 打包成了framework形式 所以没有集成到Mongo.pod中 这样有另外一个好处 按需定制 你不需要集成融云 就不用拖入扩展类）
 
-#########设置消息处理器为融云
+设置消息处理器为融云
 ```obj-c
     DFRongCloudMessageHandler *messageHandler = [[DFRongCloudMessageHandler alloc] initWithAppKey:@"你的融云Appkey" token:@"通过融云获取到的token"];
     im.messageHandler = messageHandler;
 ```
 
-
+<br />
 ####会话列表
 ```obj-c
     DFConversationViewController *conversationController = [[DFConversationViewController alloc] init];
 ```
 
+<br />
 ####聊天
 ```obj-c
     DFMessageViewController *messageViewController = [[DFMessageViewController alloc] initWithTargetId:@"目标用户ID" conversationType:@"聊天类型"];
 ```
 
-
+<br />
 界面及相关逻辑
 ===============
 
@@ -221,7 +228,7 @@ pod 'RongCloudIMLib', '~> 2.4.5'
     [AMapSearchServices sharedServices].apiKey = @"323c95e56dc16b7da2c9ebcb67b61f03";
 ```
 
-
+<br />
 自定义扩展
 ============
 
@@ -362,7 +369,7 @@ pod 'RongCloudIMLib', '~> 2.4.5'
     [manager addPlugin:plugin];
 ```
 
-
+<br />
 融云消息扩展
 ============
 
