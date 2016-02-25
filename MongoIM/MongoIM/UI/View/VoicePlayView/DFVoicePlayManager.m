@@ -7,7 +7,7 @@
 //
 
 #import "DFVoicePlayManager.h"
-#import "AFSoundManager.h"
+#import <AVFoundation/AVFoundation.h>
 #import "DFVoiceMessageContent.h"
 
 @interface DFVoicePlayManager()<AVAudioPlayerDelegate>

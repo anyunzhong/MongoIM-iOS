@@ -102,8 +102,6 @@
 		11CFBEA01C42A06B00993B3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFBE9F1C42A06B00993B3B /* AppDelegate.m */; };
 		11CFBEA31C42A06B00993B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFBEA21C42A06B00993B3B /* ViewController.m */; };
 		11CFBEA81C42A06B00993B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CFBEA71C42A06B00993B3B /* Assets.xcassets */; };
-		11CFBF121C4FCB9F00993B3B /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFBEEE1C4FCB9F00993B3B /* AFAudioRouter.m */; };
-		11CFBF131C4FCB9F00993B3B /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFBEF01C4FCB9F00993B3B /* AFSoundManager.m */; };
 		11CFBF161C4FCB9F00993B3B /* LCVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CFBEF71C4FCB9F00993B3B /* LCVoice.m */; };
 		11CFBFAC1C4FCC1F00993B3B /* c2cReceiverMsgNodeBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CFBF241C4FCC1F00993B3B /* c2cReceiverMsgNodeBG@2x.png */; };
 		11CFBFAD1C4FCC1F00993B3B /* c2cReceiverMsgNodeBG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CFBF251C4FCC1F00993B3B /* c2cReceiverMsgNodeBG@3x.png */; };
@@ -444,10 +442,6 @@
 		11CFBEA71C42A06B00993B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11CFBEAC1C42A06B00993B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CFBEE01C4FBC2D00993B3B /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
-		11CFBEED1C4FCB9F00993B3B /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
-		11CFBEEE1C4FCB9F00993B3B /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
-		11CFBEEF1C4FCB9F00993B3B /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
-		11CFBEF01C4FCB9F00993B3B /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
 		11CFBEF61C4FCB9F00993B3B /* LCVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCVoice.h; sourceTree = "<group>"; };
 		11CFBEF71C4FCB9F00993B3B /* LCVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCVoice.m; sourceTree = "<group>"; };
 		11CFBF241C4FCC1F00993B3B /* c2cReceiverMsgNodeBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c2cReceiverMsgNodeBG@2x.png"; sourceTree = "<group>"; };
@@ -1001,21 +995,9 @@
 			children = (
 				1173E4EE1C70D374004C9979 /* DFShapedImageView.h */,
 				1173E4EF1C70D374004C9979 /* DFShapedImageView.m */,
-				11CFBEEC1C4FCB9F00993B3B /* AFSoundManager */,
 				11CFBEF51C4FCB9F00993B3B /* LCVoiceHud */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		11CFBEEC1C4FCB9F00993B3B /* AFSoundManager */ = {
-			isa = PBXGroup;
-			children = (
-				11CFBEED1C4FCB9F00993B3B /* AFAudioRouter.h */,
-				11CFBEEE1C4FCB9F00993B3B /* AFAudioRouter.m */,
-				11CFBEEF1C4FCB9F00993B3B /* AFSoundManager.h */,
-				11CFBEF01C4FCB9F00993B3B /* AFSoundManager.m */,
-			);
-			path = AFSoundManager;
 			sourceTree = "<group>";
 		};
 		11CFBEF51C4FCB9F00993B3B /* LCVoiceHud */ = {
@@ -1892,10 +1874,8 @@
 				1173E4D21C7073DA004C9979 /* DFShortVideoMessageCell.m in Sources */,
 				114ABB5C1C649906004AAE9D /* DFRedBagMessageContent.m in Sources */,
 				11CFC14B1C507D6D00993B3B /* DFVoicePlayManager.m in Sources */,
-				11CFBF121C4FCB9F00993B3B /* AFAudioRouter.m in Sources */,
 				11CFC1391C507D6D00993B3B /* DFBaseBubbleView.m in Sources */,
 				11CFC13D1C507D6D00993B3B /* DFVoiceBubbleView.m in Sources */,
-				11CFBF131C4FCB9F00993B3B /* AFSoundManager.m in Sources */,
 				1173E48B1C6EDDD4004C9979 /* DFPluginPresentController.m in Sources */,
 				11CFC0B21C4FD67300993B3B /* DFPhotoCameraPlugin.m in Sources */,
 				11CFBE9D1C42A06B00993B3B /* main.m in Sources */,

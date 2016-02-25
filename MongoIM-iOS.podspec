@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :commit => '5ad61ee00adcd2adb49e243864d0571fbcd742dc' }
+  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :commit => '764f2da857f08fd3e10a38c83809c0c2c8616283' }
 
 
   s.source_files = "MongoIM/MongoIM/**/*.{h,m}"
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.framework = 'WebKit'
 
   s.dependency 'DFCommon', '~> 1.3.7'
   s.dependency 'AFNetworking', '~> 2.6.0'
