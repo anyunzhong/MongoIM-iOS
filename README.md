@@ -24,7 +24,7 @@ MongoIM-iOS
 
 架构
 ============
-![http://file-cdn.datafans.net/github/mongoimios/arch.png](http://file-cdn.datafans.net/github/mongoimios/arch.png)
+![http://file-cdn.datafans.net/github/mongoimios/arch1.png](http://file-cdn.datafans.net/github/mongoimios/arch1.png)
 
 <br />
 #### UI层风格可切换
