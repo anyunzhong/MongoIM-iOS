@@ -2,8 +2,6 @@
 MongoIM
 ============
 
-<br />
-
 支持发送文字 语音 图片 短视频 位置 红包 名片...
 <br />
 <br />
@@ -25,6 +23,7 @@ MongoIM
 ######其它公有IM云服务还在计划中.....
 ######IM后端逻辑相对复杂 MongoIM消息处理和服务端还在开发中.... 远期目标是开发一套稳定的可部署在私有云的IM服务
 
+<br />
 #### 多终端支持
 iOS：[https://github.com/anyunzhong/MongoIM-iOS](https://github.com/anyunzhong/MongoIM-iOS)
 <br />
