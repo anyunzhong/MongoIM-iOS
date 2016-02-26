@@ -15,7 +15,7 @@ MongoIM-iOS
 
 <br />
 
-即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片...
+支持发送文字 语音 图片 短视频 位置 红包 名片...
 <br />
 <br />
 ![http://file-cdn.datafans.net/github/mongoimios/cover.jpg](http://file-cdn.datafans.net/github/mongoimios/cover.jpg)
