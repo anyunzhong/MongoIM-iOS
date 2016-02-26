@@ -1,17 +1,6 @@
 
 MongoIM
 ============
-iOS：[https://github.com/anyunzhong/MongoIM-iOS](https://github.com/anyunzhong/MongoIM-iOS)
-<br />
-Android：[https://github.com/anyunzhong/MongoIM-Android](https://github.com/anyunzhong/MongoIM-Android)
-<br />
-Server：开发中....
-
-MongoIM-iOS
-=============
-[![Version](https://img.shields.io/cocoapods/v/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
-[![License](https://img.shields.io/cocoapods/l/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
-[![Platform](https://img.shields.io/cocoapods/p/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 
 <br />
 
@@ -34,7 +23,22 @@ MongoIM-iOS
 #### 消息处理层可切换
 ######目前已经对接上融云 支持单聊 群聊 讨论组 聊天室
 ######其它公有IM云服务还在计划中.....
-######IM后段逻辑相对复杂 MongoIM消息处理和服务端还在开发中.... 远期目标是开发一套稳定的可部署在私有云的IM服务
+######IM后端逻辑相对复杂 MongoIM消息处理和服务端还在开发中.... 远期目标是开发一套稳定的可部署在私有云的IM服务
+
+#### 多终端支持
+iOS：[https://github.com/anyunzhong/MongoIM-iOS](https://github.com/anyunzhong/MongoIM-iOS)
+<br />
+Android：[https://github.com/anyunzhong/MongoIM-Android](https://github.com/anyunzhong/MongoIM-Android)
+<br />
+Server：开发中....
+
+
+<br />
+MongoIM-iOS
+=============
+[![Version](https://img.shields.io/cocoapods/v/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
+[![License](https://img.shields.io/cocoapods/l/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
+[![Platform](https://img.shields.io/cocoapods/p/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 
 
 <br />
