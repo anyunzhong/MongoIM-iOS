@@ -1,3 +1,12 @@
+
+MongoIM
+============
+iOS：[https://github.com/anyunzhong/MongoIM-iOS](https://github.com/anyunzhong/MongoIM-iOS)
+<br />
+Android：[https://github.com/anyunzhong/MongoIM-Android](https://github.com/anyunzhong/MongoIM-Android)
+<br />
+Server：开发中....
+
 MongoIM-iOS
 =============
 [![Version](https://img.shields.io/cocoapods/v/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
