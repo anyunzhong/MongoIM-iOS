@@ -133,20 +133,17 @@
     
     [self loadHistoryMessages];
     
+    [self messageTableViewScrollToBottom];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    
     [self addNotify];
     
     [self addObserver];
-    
-    
-    
-    [self messageTableViewScrollToBottom];
     
 }
 

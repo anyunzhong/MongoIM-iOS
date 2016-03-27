@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MongoIM"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "即时通信 IM 支持发送文字 语音 图片 短视频 位置 红包 名片"
 
   s.homepage     = "https://github.com/anyunzhong/MongoIM-iOS"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :tag => '1.0.2' }
+  s.source       = { :git => "https://github.com/anyunzhong/MongoIM-iOS.git", :tag => '1.0.3' }
 
 
   s.source_files = "MongoIM/MongoIM/**/*.{h,m}"
@@ -41,6 +41,6 @@ Pod::Spec.new do |s|
   s.dependency 'TZImagePickerController'
   s.dependency 'FLAnimatedImage', '~> 1.0.10'
   s.dependency 'SWTableViewCell', '~> 0.3.7'
-  #s.dependency 'MWPhotoBrowser'
+  s.dependency 'MWPhotoBrowser'
 
 end
