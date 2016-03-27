@@ -2,6 +2,8 @@
 MongoIM
 ============
 
+[![Join the chat at https://gitter.im/anyunzhong/MongoIM-iOS](https://badges.gitter.im/anyunzhong/MongoIM-iOS.svg)](https://gitter.im/anyunzhong/MongoIM-iOS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 支持发送文字 语音 图片 短视频 位置 红包 名片...
 <br />
 <br />
