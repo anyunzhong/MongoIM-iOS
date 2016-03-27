@@ -39,7 +39,7 @@ MongoIM-iOS
 [![Version](https://img.shields.io/cocoapods/v/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 [![License](https://img.shields.io/cocoapods/l/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
 [![Platform](https://img.shields.io/cocoapods/p/MongoIM.svg?style=flat)](http://cocoapods.org/pods/MongoIM)
-
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/anyunzhong/MongoIM-iOS)
 
 <br />
 安装
